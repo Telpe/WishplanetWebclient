@@ -1,0 +1,20 @@
+html,body{
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:16px;
+	font-size:100%;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+	padding-top: 70px;
+	padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+	padding-left: 15px;
+	padding-right: 15px;
+}

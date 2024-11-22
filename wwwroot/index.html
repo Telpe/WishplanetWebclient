@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head id="mainHeadTag">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Wishplanet - Testsite</title>
+
+	<link rel="stylesheet" type="text/css" href="~/css/site.css" />
+	
+	<script type="text/javascript">
+		var wishplanet = {};
+		var environment = {
+			isProduction: false
+		};
+	</script>
+</head>
+<body>
+	<div id="mainWrapper" v-bind:class="'container body-content'">
+		<header>Welcome to Wishplanet</header>
+
+		<div>
+			<p>Wishplanet is a place for you to quickly store your wishes.</p>
+			<p>Your family, colleagues or friends, can see your chosen wishes, and can collaborate to fulfill your wishes</p>
+			<p>Start by logging in.</p>
+		</div>
+		<div>
+			<form>
+				<label for="loginMail">E-mail:</label>
+				<input id="loginMail" type="email" placeholder="e-mail" />
+				<br />
+				<label for="loginPassword">Password:</label>
+				<input id="loginPassword" type="password" />
+				<br />
+				<button type="submit" disabled="disabled">Submit</button>
+			</form>
+		</div>
+
+		<hr />
+		<footer>
+			<p>GPLv3 2024-> Wishplanet</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript">
+		window.addEventListener('load', function handler(event) {
+			console.log('Window Loaded. BodyScripts Running.');
+
+			/*
+			window.wishplanetLoaded.then(() => {
+				// Your late code here.
+				console.log('BodyScripts after wishplanetLoaded');
+
+
+				window.mainApp.log('HtmlDocumentScriptsLoaded');
+			});
+			*/
+			window.removeEventListener('load', handler);
+		});
+	</script>
+</body>
+</html>
